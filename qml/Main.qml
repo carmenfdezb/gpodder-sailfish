@@ -27,7 +27,7 @@ PodcastsPage {
     id: pgst
     property bool ready: false
 
-    property var playerPage: undefined
+    property var playerPage: PlayerPage { }
     property var cover: CoverContainer { }
 
     onStatusChanged: pgst.handlePageStatusChange(status)
@@ -37,14 +37,9 @@ PodcastsPage {
             createPlayerPage();
         }
     }
-
+    
     function createPlayerPage() {
-        if (player.episode != 0) {
-            if (playerPage === undefined) {
-                playerPage = Qt.createComponent('PlayerPage.qml').createObject(pgst);
-            }
-            pageStack.pushAttached(playerPage);
-        }
+		pageStack.pushAttached(playerPage);
     }
 
     function update(page, x) {

@@ -18,25 +18,63 @@
  *
  */
 
+
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 ContextMenu {
     default property alias children: container.children
+    property int size
 
     Item {
         height: Theme.itemSizeMedium
         width: parent.width
-        Row {
-            id: container
 
-            anchors {
-                verticalCenter: parent.verticalCenter
-                right: parent.right
-                margins: Theme.paddingLarge
+        // Right
+        Rectangle {
+            color: Theme.secondaryColor
+            height: parent.height
+            width: Theme.paddingSmall
+            opacity: flick.contentX < (flick.contentWidth - flick.width - Theme.paddingLarge) ? 0.5 : 0.0
+            visible: opacity > 0
+            anchors.right: visible ? parent.right : undefined
+            Behavior on opacity {
+                FadeAnimation {}
             }
+        }
 
-            spacing: Theme.paddingLarge
+        // Left
+        Rectangle {
+            color: Theme.secondaryColor
+            height: parent.height
+            width: Theme.paddingSmall
+            opacity: flick.contentX > Theme.paddingLarge ? 0.5 : 0.0
+            visible: opacity > 0
+            anchors.left: visible ? parent.left : undefined
+            Behavior on opacity {
+                FadeAnimation {}
+            }
+        }
+
+        Flickable {
+            id: flick
+
+            height: parent.height
+            width: parent.width
+            contentWidth: container.width + 2 * Theme.paddingLarge
+            contentHeight: height
+            pixelAligned: true
+
+            Flow {
+                id: container
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                    left: parent.left
+                    margins: Theme.paddingLarge
+                }
+
+                spacing: Theme.paddingLarge
+            }
         }
     }
 }

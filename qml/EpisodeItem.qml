@@ -76,16 +76,17 @@ ListItem {
                     }
                 }
 
-                onPressAndHold: {
+            }
+            
+            IconMenuItem {
+				text: qsTr("Enqueue")
+				icon.source: 'image://theme/icon-m-down'
+				onClicked: {
                     player.enqueueEpisode(id, function () {
-                        if (!player.isPlaying) {
-                            player.jumpToQueueIndex(0);
-                        } else {
-                            pageStack.navigateForward(PageStackAction.Animated);
-                        }
+						pageStack.navigateForward(PageStackAction.Animated);
                     });
                 }
-            }
+			}
 
             IconMenuItem {
                 text: qsTr("Download")
