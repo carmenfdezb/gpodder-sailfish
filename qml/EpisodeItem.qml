@@ -83,7 +83,11 @@ ListItem {
 				icon.source: 'image://theme/icon-m-down'
 				onClicked: {
                     player.enqueueEpisode(id, function () {
-						pageStack.navigateForward(PageStackAction.Animated);
+						if (!player.isPlaying) {
+                            player.jumpToQueueIndex(0);
+                        } else {
+                            pageStack.navigateForward(PageStackAction.Animated);
+                        }
                     });
                 }
 			}
