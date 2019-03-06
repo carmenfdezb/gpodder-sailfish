@@ -107,22 +107,22 @@
         <translation>En cola</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeItem.qml" line="92"/>
+        <location filename="../qml/EpisodeItem.qml" line="96"/>
         <source>Download</source>
         <translation>Descargar</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeItem.qml" line="102"/>
+        <location filename="../qml/EpisodeItem.qml" line="106"/>
         <source>Delete</source>
         <translation>Borrar</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeItem.qml" line="116"/>
+        <location filename="../qml/EpisodeItem.qml" line="120"/>
         <source>Toggle New</source>
         <translation>Nuevo</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeItem.qml" line="122"/>
+        <location filename="../qml/EpisodeItem.qml" line="126"/>
         <source>Shownotes</source>
         <translation>Notas</translation>
     </message>
@@ -200,52 +200,57 @@
         <translation>Limpiar cola de reproducción</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="172"/>
+        <location filename="../qml/PlayerPage.qml" line="176"/>
         <source>Pause</source>
         <translation>Pausar</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="172"/>
+        <location filename="../qml/PlayerPage.qml" line="176"/>
         <source>Play</source>
         <translation>Reproducir</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="67"/>
+        <location filename="../qml/PlayerPage.qml" line="71"/>
         <source>Now playing</source>
         <translation>Reproduciendo</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="95"/>
+        <location filename="../qml/PlayerPage.qml" line="67"/>
+        <source>Player</source>
+        <translation>Reproductor</translation>
+    </message>
+    <message>
+        <location filename="../qml/PlayerPage.qml" line="99"/>
         <source>Sleep timer: </source>
         <translation>Temporizador: </translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="153"/>
+        <location filename="../qml/PlayerPage.qml" line="157"/>
         <source>- 1 min</source>
         <translation>- 1 min</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="163"/>
+        <location filename="../qml/PlayerPage.qml" line="167"/>
         <source>- 10 sec</source>
         <translation>- 10 seg</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="184"/>
+        <location filename="../qml/PlayerPage.qml" line="188"/>
         <source>+ 10 sec</source>
         <translation>+ 10 seg</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="193"/>
+        <location filename="../qml/PlayerPage.qml" line="197"/>
         <source>+ 1 min</source>
         <translation>+ 1 min</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="203"/>
+        <location filename="../qml/PlayerPage.qml" line="207"/>
         <source>Enqueue</source>
         <translation>En cola</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="227"/>
+        <location filename="../qml/PlayerPage.qml" line="231"/>
         <source>Remove from queue</source>
         <translation>Eliminar de la cola</translation>
     </message>

@@ -64,8 +64,13 @@ Page {
             width: playerPage.width
 
             PageHeader {
-                title: qsTr("Now playing")
+                title: qsTr("Player")
             }
+            
+            SectionHeader {
+				text: qsTr("Now playing")
+				visible: player.episode!=0
+			}
 
             Label {
                 anchors {
