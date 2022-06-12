@@ -32,11 +32,6 @@
 <context>
     <name>AllEpisodesPage</name>
     <message>
-        <location filename="../qml/AllEpisodesPage.qml" line="55"/>
-        <source>Episodes: </source>
-        <translation>Епизоди: </translation>
-    </message>
-    <message>
         <location filename="../qml/AllEpisodesPage.qml" line="71"/>
         <source>No episodes found</source>
         <translation>Няма намерени епизоди</translation>
@@ -66,22 +61,22 @@
 <context>
     <name>EpisodeDetail</name>
     <message>
-        <location filename="../qml/EpisodeDetail.qml" line="63"/>
+        <location filename="../qml/EpisodeDetail.qml" line="66"/>
         <source>Visit website</source>
         <translation>Интернет страница</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeDetail.qml" line="81"/>
+        <location filename="../qml/EpisodeDetail.qml" line="84"/>
         <source>Episode details</source>
         <translation>Детайли</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeDetail.qml" line="131"/>
+        <location filename="../qml/EpisodeDetail.qml" line="145"/>
         <source>Chapters</source>
         <translation>Глави</translation>
     </message>
     <message>
-        <location filename="../qml/EpisodeDetail.qml" line="179"/>
+        <location filename="../qml/EpisodeDetail.qml" line="193"/>
         <source>Shownotes</source>
         <translation>Описание</translation>
     </message>
@@ -114,7 +109,7 @@
     <message>
         <location filename="../qml/EpisodeItem.qml" line="92"/>
         <source>Enqueue</source>
-        <translation>В опашката</translation>
+        <translation>Към опашката</translation>
     </message>
     <message>
         <location filename="../qml/EpisodeItem.qml" line="105"/>
@@ -124,7 +119,7 @@
     <message>
         <location filename="../qml/EpisodeItem.qml" line="111"/>
         <source>Deleting</source>
-        <translation>Ще се изтрие</translation>
+        <translation>Изтрива се</translation>
     </message>
     <message>
         <location filename="../qml/EpisodeItem.qml" line="119"/>
@@ -142,7 +137,7 @@
     <message>
         <location filename="../qml/EpisodeListFilterItem.qml" line="33"/>
         <source>Filter: </source>
-        <translation>Филтер: </translation>
+        <translation>Филтър: </translation>
     </message>
 </context>
 <context>
@@ -171,48 +166,55 @@
 <context>
     <name>GPodderEpisodeListModel</name>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="43"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="43"/>
         <source>All</source>
         <translation>Всички</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="44"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="44"/>
         <source>Fresh</source>
         <translation>Нови и неизтеглени</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="45"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="45"/>
         <source>Downloaded</source>
         <translation>Изтеглени</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="46"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="46"/>
         <source>Unplayed downloads</source>
         <translation>Непускани епизоди</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="47"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="47"/>
         <source>Finished downloads</source>
         <translation>Изслушани епизоди</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="48"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="48"/>
         <source>Hide deleted</source>
         <translation>Без изтритите</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="49"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="49"/>
         <source>Deleted episodes</source>
         <translation>Изтрити епизоди</translation>
     </message>
     <message>
-        <location filename="../gpodder-ui-qml/common/GPodderEpisodeListModel.qml" line="50"/>
+        <location filename="../common/GPodderEpisodeListModel.qml" line="50"/>
         <source>Short downloads (&lt; 10 min)</source>
         <translation>Кратки епизоди (&lt; 10 мин)</translation>
     </message>
 </context>
 <context>
     <name>ImportOPML</name>
+    <message>
+        <location filename="../qml/ImportOPML.qml" line="11"/>
+        <location filename="../qml/ImportOPML.qml" line="15"/>
+        <source>None</source>
+        <translatorcomment>Никой</translatorcomment>
+        <translation></translation>
+    </message>
     <message>
         <location filename="../qml/ImportOPML.qml" line="34"/>
         <source>Import OPML File</source>
@@ -265,7 +267,7 @@
 <context>
     <name>PlayerCover</name>
     <message>
-        <location filename="../qml/PlayerCover.qml" line="127"/>
+        <location filename="../qml/PlayerCover.qml" line="126"/>
         <source>Sleep timer: </source>
         <translation>Отброяване до заспиване: </translation>
     </message>
@@ -288,12 +290,12 @@
         <translation>Изчистване на опашката</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="204"/>
+        <location filename="../qml/PlayerPage.qml" line="211"/>
         <source>Pause</source>
         <translation>Паузиране</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="204"/>
+        <location filename="../qml/PlayerPage.qml" line="211"/>
         <source>Play</source>
         <translation>Пускане</translation>
     </message>
@@ -308,37 +310,37 @@
         <translation>Прослушване</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="126"/>
+        <location filename="../qml/PlayerPage.qml" line="133"/>
         <source>Sleep timer: </source>
         <translation>Отброяване до заспиване: </translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="185"/>
+        <location filename="../qml/PlayerPage.qml" line="192"/>
         <source>- 1 min</source>
         <translation>- 1 мин</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="195"/>
+        <location filename="../qml/PlayerPage.qml" line="202"/>
         <source>- 10 sec</source>
         <translation>- 10 сек</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="216"/>
+        <location filename="../qml/PlayerPage.qml" line="223"/>
         <source>+ 10 sec</source>
         <translation>+ 10 сек</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="225"/>
+        <location filename="../qml/PlayerPage.qml" line="232"/>
         <source>+ 1 min</source>
         <translation>+ 1 мин</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="235"/>
+        <location filename="../qml/PlayerPage.qml" line="242"/>
         <source>Queue</source>
         <translation>Опашка</translation>
     </message>
     <message>
-        <location filename="../qml/PlayerPage.qml" line="259"/>
+        <location filename="../qml/PlayerPage.qml" line="266"/>
         <source>Remove from queue</source>
         <translation>Премахване от опашката</translation>
     </message>
@@ -361,18 +363,18 @@
         <translation>Детайли</translation>
     </message>
     <message>
-        <location filename="../qml/PodcastDetail.qml" line="135"/>
+        <location filename="../qml/PodcastDetail.qml" line="136"/>
         <source>Section: </source>
         <translation>Раздел: </translation>
     </message>
     <message>
-        <location filename="../qml/PodcastDetail.qml" line="167"/>
-        <location filename="../qml/PodcastDetail.qml" line="201"/>
+        <location filename="../qml/PodcastDetail.qml" line="168"/>
+        <location filename="../qml/PodcastDetail.qml" line="203"/>
         <source>Edit Section</source>
         <translation>Редактиране на раздел</translation>
     </message>
     <message>
-        <location filename="../qml/PodcastDetail.qml" line="202"/>
+        <location filename="../qml/PodcastDetail.qml" line="204"/>
         <source>Save</source>
         <translation>Записване</translation>
     </message>

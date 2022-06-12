@@ -20,7 +20,6 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import QtMultimedia 5.0
 
 import 'common/util.js' as Util
 
@@ -32,6 +31,7 @@ CoverBackground {
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
         height: sourceSize.height * width / sourceSize.width
+        asynchronous: true
     }
 
     PodcastsCover {
@@ -41,11 +41,16 @@ CoverBackground {
 
     PlayerCover {
         id: playerCover
-        visible: cover_player && player.episode != 0 && (player.playbackState == MediaPlayer.PlayingState || player.playbackState == MediaPlayer.PausedState)
+        width: parent.width
+        height: width
+        property string cover_art: player.cover_art
+        property string episode_art: player.episode_art
+        property string title_char: player.podcast_title[0]
+        visible: cover_player && player.episode !== 0 && (player.isPlaying || player.isPaused)
     }
 
     CoverActionList {
-        enabled: cover_player && player.episode != 0 && player.playbackState == MediaPlayer.PlayingState
+        enabled: cover_player && player.episode !== 0 && player.isPlaying
 
         CoverAction {
             iconSource: 'image://theme/icon-cover-pause'
@@ -58,7 +63,7 @@ CoverBackground {
     }
 
     CoverActionList {
-        enabled: cover_player && player.episode != 0 && player.playbackState == MediaPlayer.PausedState
+        enabled: cover_player && player.episode !== 0 && player.isPaused
 
         CoverAction {
             iconSource: 'image://theme/icon-cover-play'
@@ -76,7 +81,7 @@ CoverBackground {
     }
 
     CoverActionList {
-        enabled: player.episode == 0 || (player.episode != 0 && player.playbackState == MediaPlayer.StoppedState)
+        enabled: player.episode === 0 || (player.episode !== 0 && player.isStopped)
 
         CoverAction {
             iconSource: 'image://theme/icon-cover-sync'
